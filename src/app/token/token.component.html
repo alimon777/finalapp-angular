@@ -1,0 +1,12 @@
+<h1>Login</h1>
+<form id="loginForm">
+    <label for="userName">Enter Username:</label>
+    <input type="text" name="userName" id="userName" [(ngModel)]="user.userName" required>
+
+    <label for="password">Enter Password:</label>
+    <input type="password" name="password" id="password" [(ngModel)]="user.password" required>
+
+    <button type="submit" (click)="onSubmit()">Login</button>
+</form>
+<div>Token {{token}}</div>
+<div>api1.0 {{message}}</div>
